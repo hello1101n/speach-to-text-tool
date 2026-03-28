@@ -28,6 +28,8 @@ pip install -e .
 ## Usage
 
 ```bash
+cd speech-to-text
+source .venv/bin/activate
 stt
 ```
 
