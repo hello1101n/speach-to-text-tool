@@ -1,0 +1,19 @@
+[project]
+name = "speech-to-text"
+version = "0.1.0"
+description = "Hold right ⌘ to dictate. Fully local MLX Whisper on Apple Silicon."
+requires-python = ">=3.10"
+dependencies = [
+    "mlx-whisper",
+    "sounddevice",
+    "numpy",
+    "pyobjc-framework-Quartz",
+    "rumps",
+]
+
+[project.scripts]
+stt = "stt.app:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
